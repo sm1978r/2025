@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HelloHelp - Customer Support Made Easy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #0067b8;
+      --accent: #e6f2fb;
+      --background: #f2f2f2;
+      --text-color: #1b1b1b;
+      --card-bg: #ffffff;
+      --yellow-accent: #fff4ce;
+      --red-accent: #fde7e9;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+    nav {
+      background-color: var(--card-bg);
+      border-bottom: 1px solid #ddd;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background-color: var(--card-bg);
+      text-align: center;
+      padding: 80px 20px 60px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 30px;
+      color: #333;
+    }
+    .hero a {
+      display: inline-block;
+      background-color: var(--primary);
+      color: white;
+      padding: 14px 32px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .section {
+      background-color: var(--card-bg);
+      padding: 60px 20px;
+      margin: 40px auto;
+      max-width: 1100px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: var(--primary);
+      text-align: center;
+    }
+    .features {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: nowrap;
+      gap: 40px;
+      margin-top: 30px;
+    }
+    .feature-card {
+      flex: 1 1 250px;
+      background-color: var(--accent);
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .feature-card h3 {
+      margin-top: 15px;
+      color: var(--primary);
+    }
+    .feature-card p {
+      font-size: 0.95rem;
+      margin-top: 10px;
+    }
+    .download-buttons {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .download-buttons img {
+      height: 48px;
+      margin: 10px;
+    }
+    footer {
+      background-color: #1b1b1b;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+    footer p {
+      margin-bottom: 10px;
+    }
+    footer .links a {
+      color: #ccc;
+      margin: 0 10px;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+    footer .links a:hover {
+      text-decoration: underline;
+    }
+    @media screen and (max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Icon-round-Question_mark.svg" alt="HelloHelp Logo" style="height: 32px; vertical-align: middle; margin-right: 10px;; " />
+    <a href="#">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#features">Support</a>
+    <a href="#download">Download App</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Get Help When You Need It</h1>
+    <p>With HelloHelp, you can connect with our customer support team through video, chat, or voice — instantly and effortlessly.</p>
+    <a href="#download" style="background-color: var(--primary); color: white;">Download the App</a>
+  </section>
+
+  
+
+    
+  <section class="section" id="features">
+  <h2>Our Support Options</h2>
+  <div class="features">
+    <div class="feature-card" style="text-align: center; background: none; box-shadow: none; border: 2px solid #0067b8; padding: 20px; border-radius: 10px;">
+      <img src="https://img.icons8.com/ios-filled/100/f25022/video-call.png" alt="Video Call" style="display: block; margin: 0 auto 10px;" />
+      <p>Speak face-to-face with a support expert and get real-time assistance using HelloHelp.</p>
+      </div>
+      <div class="feature-card" style="text-align: center; background: none; box-shadow: none; border: 2px solid #0067b8; padding: 20px; border-radius: 10px;">
+      <img src="https://img.icons8.com/ios-filled/100/7fba00/phone.png" alt="Phone Call" style="display: block; margin: 0 auto 10px;" />
+      <p>Prefer talking? Call our friendly agents directly using HelloHelp and get quick solutions to your problems.</p>
+      </div>
+      <div class="feature-card" style="text-align: center; background: none; box-shadow: none; border: 2px solid #0067b8; padding: 20px; border-radius: 10px;">
+      <img src="https://img.icons8.com/ios-filled/100/00a4ef/chat-message.png" alt="Live Chat" style="display: block; margin: 0 auto 10px;" />
+      <p>Chat with our support team in real time using HelloHelp for instant solutions to your questions and installation issues.</p>
+      </div>
+    </div>
+</section>
+<section class="section" id="about">
+  <h2>About HelloHelp</h2>
+  <p style="max-width: 800px; margin: 0 auto; font-size: 1rem; color: #333; text-align: center;">
+    HelloHelp is a specialized support Mobile App designed for registered customers who require assistance with their internet setup, set top box installation, or TV equipment and connectivity set up. Our platform enables existing registered users to easily connect with our customer support team via video, voice, or chat.
+  </p>
+</section>
+
+<section class="section" id="how-it-works">
+  <h2>How It Works</h2>
+  <div class="features">
+    <div class="feature-card" style="background-color: transparent; border: 2px solid #0067b8; min-width: 200px; height: 260px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <img src="https://img.icons8.com/ios-filled/100/0067b8/download--v1.png" alt="Step 1" style="height: 60px; margin-bottom: 15px;" />
+      <h3>Step 1</h3>
+      <p>Download the HelloHelp app from the App Store or Google Play.</p>
+    </div>
+    <div class="feature-card" style="background-color: transparent; border: 2px solid #0067b8; min-width: 200px; height: 260px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <img src="https://img.icons8.com/ios-filled/100/0067b8/add-user-group-man-man.png" alt="Step 2" style="height: 60px; margin-bottom: 15px;" />
+      <h3>Step 2</h3>
+      <p>Enter your mobile number and confirm your identity using a one-time password (OTP).</p>
+    </div>
+    <div class="feature-card" style="background-color: transparent; border: 2px solid #0067b8; min-width: 200px; height: 260px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <img src="https://img.icons8.com/ios-filled/100/0067b8/online-support.png" alt="Step 3" style="height: 60px; margin-bottom: 15px;" />
+      <h3>Step 3</h3>
+      <p>Choose a support option: Video, Chat, or Call.</p>
+    </div>
+    <div class="feature-card" style="background-color: transparent; border: 2px solid #0067b8; min-width: 200px; height: 260px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <img src="https://img.icons8.com/ios-filled/100/0067b8/connected-people.png" alt="Step 4" style="height: 60px; margin-bottom: 15px;" />
+      <h3>Step 4</h3>
+      <p>Connect instantly with our trained support experts.</p>
+    </div>
+  </div>
+    
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <h2>Frequently Asked Questions</h2>
+  <div style="max-width: 800px; margin: 30px auto;">
+    <div style="margin-bottom: 20px;">
+      <h3 style="color: var(--primary); font-size: 1.2rem;">Who is eligible to use HelloHelp?</h3>
+      <p>HelloHelp app is available for download but support is available only for registered users. If your phone number is not on file, you will be asked to provide your account number to verify your eligibility.</p>
+    </div>
+    <div style="margin-bottom: 20px;">
+      <h3 style="color: var(--primary); font-size: 1.2rem;">What types of support does HelloHelp offer?</h3>
+      <p>HelloHelp provides assistance with internet setup, set top box installation, TV equipment and connectivity set up, TV equipment and connectivity set up, billing queries, and technical support for registered users*.</p>
+    </div>
+    <div style="margin-bottom: 20px;">
+      <h3 style="color: var(--primary); font-size: 1.2rem;">Can I use HelloHelp without registration?</h3>
+      <p>No. You must be a verified and active customer. Support is not available for unregistered or expired accounts.</p>
+    </div>
+    <div style="margin-bottom: 20px;">
+      <h3 style="color: var(--primary); font-size: 1.2rem;">How do I verify my registration?</h3>
+      <p>Download the app and contact HelloHelp to confirm the status of your registration.</p>
+    </div>
+  </div>
+</section>
+
+  <section class="section" id="testimonials" style="background-color: #f9f9f9; overflow-x: auto;">
+  <h2 style="text-align: center; color: var(--primary); margin-bottom: 40px;">What Our Customers Say</h2>
+  <div class="features" style="display: flex; gap: 30px; width: max-content;">
+  
+    <div style="flex: 0 0 auto; background: var(--yellow-accent); padding: 20px; border-radius: 10px; width: 250px;">
+      <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Frank Harris" style="border-radius: 50%; width: 64px; height: 64px; margin-bottom: 10px;" />
+      <h4 style="margin: 0; color: #333;">Frank Harris</h4>
+<p style="font-size: 0.9rem; color: #555;">“I wasn’t sure how to set up my connection, but HelloHelp walked me through every step — it was easy and reassuring.”</p>
+    </div>
+    <div style="flex: 0 0 auto; background: var(--yellow-accent); padding: 20px; border-radius: 10px; width: 250px;">
+      <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Diane Carter" style="border-radius: 50%; width: 64px; height: 64px; margin-bottom: 10px;" />
+      <h4 style="margin: 0; color: #333;">Diane Carter</h4>
+      <p style="font-size: 0.9rem; color: #555;">“I love that I can talk to someone face-to-face when I need help.”</p>
+    </div>
+    <div style="flex: 0 0 auto; background: #dcedc8; padding: 20px; border-radius: 10px; width: 250px;">
+      <img src="https://randomuser.me/api/portraits/men/70.jpg" alt="George Mitchell" style="border-radius: 50%; width: 64px; height: 64px; margin-bottom: 10px;" />
+      <h4 style="margin: 0; color: #333;">George Mitchell</h4>
+      <p style="font-size: 0.9rem; color: #555;">“It’s comforting to know help is just a video call away.”</p>
+    </div>
+    <div style="flex: 0 0 auto; background: var(--red-accent); padding: 20px; border-radius: 10px; width: 250px;">
+      <img src="https://randomuser.me/api/portraits/women/75.jpg" alt="Helen Foster" style="border-radius: 50%; width: 64px; height: 64px; margin-bottom: 10px;" />
+      <h4 style="margin: 0; color: #333;">Helen Foster</h4>
+      <p style="font-size: 0.9rem; color: #555;">“The app is simple, and the support team is always kind and patient.”</p>
+    </div>
+    <div style="flex: 0 0 auto; background: #e0f7fa; padding: 20px; border-radius: 10px; width: 250px;">
+      <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Emily Walker" style="border-radius: 50%; width: 64px; height: 64px; margin-bottom: 10px;" />
+      <h4 style="margin: 0; color: #333;">Emily Walker</h4>
+      <p style="font-size: 0.9rem; color: #555;">“HelloHelp is a game changer for support.”</p>
+    </div>
+    <div style="flex: 0 0 auto; background: #fce4ec; padding: 20px; border-radius: 10px; width: 250px;">
+      <img src="https://randomuser.me/api/portraits/men/50.jpg" alt="James Thompson" style="border-radius: 50%; width: 64px; height: 64px; margin-bottom: 10px;" />
+      <h4 style="margin: 0; color: #333;">James Thompson</h4>
+      <p style="font-size: 0.9rem; color: #555;">“Super convenient chat and video options.”</p>
+    </div>
+    <div style="flex: 0 0 auto; background: #fff3e0; padding: 20px; border-radius: 10px; width: 250px;">
+      <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Samantha Douglas" style="border-radius: 50%; width: 64px; height: 64px; margin-bottom: 10px;" />
+      <h4 style="margin: 0; color: #333;">Samantha Douglas</h4>
+      <p style="font-size: 0.9rem; color: #555;">“Got help in under 2 minutes!”</p>
+    </div>
+    <div style="flex: 0 0 auto; background: #ede7f6; padding: 20px; border-radius: 10px; width: 250px;">
+      <img src="https://randomuser.me/api/portraits/men/38.jpg" alt="Ryan Cooper" style="border-radius: 50%; width: 64px; height: 64px; margin-bottom: 10px;" />
+      <h4 style="margin: 0; color: #333;">Ryan Cooper</h4>
+      <p style="font-size: 0.9rem; color: #555;">“Setup was a breeze with video call.”</p>
+    </div>
+    <div style="flex: 0 0 auto; background: #e8f5e9; padding: 20px; border-radius: 10px; width: 250px;">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Amanda Lewis" style="border-radius: 50%; width: 64px; height: 64px; margin-bottom: 10px;" />
+      <h4 style="margin: 0; color: #333;">Amanda Lewis</h4>
+      <p style="font-size: 0.9rem; color: #555;">“Instant connection. No hold music!”</p>
+    </div>
+    <div style="flex: 0 0 auto; background: var(--yellow-accent); padding: 20px; border-radius: 10px; width: 250px;">
+      <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Mark Johnson" style="border-radius: 50%; width: 64px; height: 64px; margin-bottom: 10px;" />
+      <h4 style="margin: 0; color: #333;">Mark Johnson</h4>
+      <p style="font-size: 0.9rem; color: #555;">“Support team was quick and helpful.”</p>
+    </div>
+    <div style="flex: 0 0 auto; background: #e3f2fd; padding: 20px; border-radius: 10px; width: 250px;">
+      <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Grace Miller" style="border-radius: 50%; width: 64px; height: 64px; margin-bottom: 10px;" />
+      <h4 style="margin: 0; color: #333;">Grace Miller</h4>
+      <p style="font-size: 0.9rem; color: #555;">“Feels like talking to a real person.”</p>
+    </div>
+    <div style="flex: 0 0 auto; background: #f3e5f5; padding: 20px; border-radius: 10px; width: 250px;">
+      <img src="https://randomuser.me/api/portraits/men/36.jpg" alt="Kevin Brown" style="border-radius: 50%; width: 64px; height: 64px; margin-bottom: 10px;" />
+      <h4 style="margin: 0; color: #333;">Kevin Brown</h4>
+      <p style="font-size: 0.9rem; color: #555;">“Much better than traditional support!”</p>
+    </div>
+    <div style="flex: 0 0 auto; background: #fffde7; padding: 20px; border-radius: 10px; width: 250px;">
+      <img src="https://randomuser.me/api/portraits/women/62.jpg" alt="Sophia Harris" style="border-radius: 50%; width: 64px; height: 64px; margin-bottom: 10px;" />
+      <h4 style="margin: 0; color: #333;">Sophia Harris</h4>
+      <p style="font-size: 0.9rem; color: #555;">“Five stars for convenience.”</p>
+    </div>
+    <div style="flex: 0 0 auto; background: #e1f5fe; padding: 20px; border-radius: 10px; width: 250px;">
+      <img src="https://randomuser.me/api/portraits/men/48.jpg" alt="Jason Scott" style="border-radius: 50%; width: 64px; height: 64px; margin-bottom: 10px;" />
+      <h4 style="margin: 0; color: #333;">Jason Scott</h4>
+      <p style="font-size: 0.9rem; color: #555;">“Quick, smart, and easy to use.”</p>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<section class="section" id="download">
+  <h2>Download the HelloHelp App</h2>
+  <p style="text-align: center; font-size: 1rem; color: #333; max-width: 700px; margin: 0 auto 20px;">
+    Access support on the go with our mobile app. Available now on Google Play and the App Store.
+  </p>
+  <div class="download-buttons" style="text-align: center;">
+    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Download on Google Play" style="height: 60px;" /></a>
+    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store" style="height: 60px;" /></a>
+  </div>
+</section>
+
+<div id="contact-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.6); z-index:9999;">
+  <div style="background-color:#fff; max-width:600px; margin:80px auto; padding:30px; border-radius:10px; position:relative;">
+    <h2>Contact Us</h2>
+    <form style="display: flex; flex-direction: column; gap: 15px;">
+      <input type="text" name="name" placeholder="Your Name" required style="padding: 10px; border-radius: 6px; border: 1px solid #ccc;" />
+      <input type="email" name="email" placeholder="Your Email" required style="padding: 10px; border-radius: 6px; border: 1px solid #ccc;" />
+      <textarea name="message" rows="5" placeholder="Your Message" required style="padding: 10px; border-radius: 6px; border: 1px solid #ccc;"></textarea>
+      <button type="submit" style="background-color: var(--primary); color: white; padding: 12px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer;">Send Message</button>
+    </form>
+    <button onclick="document.getElementById('contact-modal').style.display='none'" style="position:absolute; top:10px; right:15px; background:none; border:none; font-size:1.5rem; cursor:pointer;">&times;</button>
+  </div>
+</div>
+
+<footer id="contact">
+  <div style="font-size: 0.85rem; color: #f2f2f2; margin-bottom: 20px;">
+    <strong>Disclaimer:</strong></strong> HelloHelp is a support Mobile App made available only to registered customers of IV Support Holdings LLC, or any of its partners or affiliates. This Mobile App is not intended for general public use. Unauthorized access is strictly prohibited and may result in denial of service. HelloHelp is exclusively available to customers who have an active registration with us. Support will not be provided unless your details are verified and you are part of our registered service base. We reserve the right to deny access to services for unverified users.<br /><br />$2</strong> By using HelloHelp, you agree to the terms set forth by IV Support Holdings LLC. You must be a verified customer to access support services. All interactions may be monitored or recorded for training and quality purposes. The company reserves the right to update or revise terms at any time.
+  </div>
+    <p>Contact us at <a href="mailto:support@hellohelp.com" style="color: #f2f2f2; text-decoration: underline;">support@hellohelp.com</a></p>
+    <div class="links">
+      <a href="#" onclick="openPrivacyModal()">Privacy Policy</a>
+      <a href="#" onclick="openTermsModal()">Terms of Use</a>
+      <a href="#" onclick="document.getElementById('contact-modal').style.display='block'">Contact Us</a>
+    </div>
+    <div class="features" style="margin-top: 30px; justify-content: center;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/PCI_SSC_logo.svg/2560px-PCI_SSC_logo.svg.png" alt="PCI Compliance" style="height: 40px; margin: 0 20px;" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Fast_Company_logo.svg" alt="Fast Company" style="height: 40px; margin: 0 20px;" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Trustpilot_logo_2022.svg/2560px-Trustpilot_logo_2022.svg.png" alt="Trust Pilot" style="height: 40px; margin: 0 20px;" />
+  </div>
+</footer>
+<script>
+  const testimonialRow = document.querySelector('#testimonials .features');
+  let scrollPosition = 0;
+
+  function autoScrollTestimonials() {
+    if (!testimonialRow) return;
+    scrollPosition += 0.5;
+    testimonialRow.scrollTo({ left: scrollPosition, behavior: 'smooth' });
+
+    if (scrollPosition >= testimonialRow.scrollWidth - testimonialRow.clientWidth) {
+      scrollPosition = 0;
+    }
+  }
+
+  setInterval(autoScrollTestimonials, 50);
+</script>
+<div id="terms-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.6); z-index:9999;">
+  <div style="background-color:#fff; max-width:800px; margin:60px auto; padding:30px; border-radius:10px; overflow-y:auto; max-height:80%; position:relative;">
+    <h2>Terms & Conditions</h2>
+    <p>Welcome to our service. If you continue to browse and use this service, you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern IV Support Holdings LLC's relationship with you in relation to this service. If you disagree with any part of these terms and conditions, please do not use our service.</p>
+    <p>The term 'HelloHelp' or 'us' or 'we' refers to the owner of the service. The term 'you' refers to the user of our service.</p>
+    <p>The use of this service is subject to the following terms of use:</p>
+    <ul style="margin-left: 20px;">
+      <li>The content of the pages/screens of this service is for your general information and use only. It is subject to change without notice.</li>
+      <li>This service may use cookies to monitor browsing preferences.</li>
+      <li>Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this service for any particular purpose. You acknowledge that such information and materials may contain inaccuracies or errors and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law.</li>
+      <li>Your use of any information or materials on this service is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services or information available through this service meet your specific requirements.</li>
+      <li>This service contains material which is owned by or licensed to us. This material includes, but is not limited to, the design, layout, look, appearance and graphics. Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions.</li>
+      <li>All trademarks reproduced in this service, which are not the property of, or licensed to the operator, are acknowledged on the service.</li>
+      <li>Unauthorised use of this service may give rise to a claim for damages and/or be a criminal offence.</li>
+      <li>From time to time, this service may also include links to other services. These links are provided for your convenience to provide further information. They do not signify that we endorse the service(s). We have no responsibility for the content of the linked service(s).</li>
+      <li>Your use of this service and any dispute arising out of such use of the service is subject to the laws of the United States of America.</li>
+    </ul>
+    <button onclick="document.getElementById('terms-modal').style.display='none'" style="position:absolute; top:10px; right:15px; background:none; border:none; font-size:1.5rem; cursor:pointer;">&times;</button>
+  </div>
+</div>
+<script>
+  function openTermsModal() {
+    document.getElementById('terms-modal').style.display = 'block';
+  }
+</script>
+<div id="privacy-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.6); z-index:9999;">
+  <div style="background-color:#fff; max-width:800px; margin:60px auto; padding:30px; border-radius:10px; overflow-y:auto; max-height:80%; position:relative;">
+    <h2>Privacy Policy</h2>
+    <p><strong>Effective Date:</strong> 29th March 2025</p>
+    <p><strong>Introduction</strong><br />IV Support Holdings LLC ("we," "our," or "us") is committed to safeguarding your privacy. This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you use our websites or access our mobile and TV applications marketed under the HelloHelp brand (collectively, "Services").</p>
+    <p>By using our Services, you acknowledge that you have read and agree to the terms of this Privacy Policy. If you do not agree, please discontinue using the Services immediately.</p>
+    <p><strong>Scope</strong><br />This Privacy Policy applies to all users of our Services, regardless of their location, and covers all data collection, usage, and storage practices associated with the Services.</p>
+    <p><strong>Information We Collect</strong></p>
+    <ul>
+      <li><strong>Personal Information</strong><br />We may collect information that identifies you directly, including but not limited to: Full name, Email address, Phone number, Billing and payment details, Account credentials</li>
+      <li><strong>Non-Personal Information</strong><br />We may collect non-identifiable information such as: IP addresses, Device identifiers, Browser types, Viewing and usage patterns, Geographical location (if enabled)</li>
+      <li><strong>Information from Third Parties</strong><br />We may also collect information about you from trusted third-party partners, including analytics providers, social media platforms, and payment processors.</li>
+    </ul>
+    <p><strong>How We Use Your Information</strong><br />We use the collected information to: Provide and manage our Services; Enhance user experience; Communicate with you; Improve functionality; Comply with legal obligations.</p>
+    <p><strong>Third-Party Services</strong><br />Our Services may include integrations with third-party platforms. We encourage you to review their privacy policies.</p>
+    <p><strong>Cookies and Tracking Technologies</strong><br />We use cookies and similar technologies. You can control cookie settings through your browser or device preferences.</p>
+    <p><strong>International Data Transfers</strong><br />Your information may be transferred or stored outside your country. We ensure all transfers comply with applicable laws.</p>
+    <p><strong>Data Retention</strong><br />We retain your data only as long as necessary or as required by law.</p>
+    <p><strong>Your Rights</strong><br />Depending on your location, you may have the right to access, correct, delete, or request your personal data.</p>
+    <p><strong>Children’s Privacy</strong><br />Our Services are not intended for children under 13, and we do not knowingly collect data from them.</p>
+    <p><strong>Data Security</strong><br />We implement strong security measures including encryption and access control.</p>
+    <p><strong>Changes to This Privacy Policy</strong><br />We may update this Privacy Policy and will notify you of significant changes.</p>
+    <p><strong>Contact Us</strong><br />IV Support Holdings LLC<br />500 W Putnam Avenue, Suite 400, Greenwich, CT 06830<br />Email: support@hellohelp.io<br />Phone: 203-930-9725</p>
+    <button onclick="document.getElementById('privacy-modal').style.display='none'" style="position:absolute; top:10px; right:15px; background:none; border:none; font-size:1.5rem; cursor:pointer;">&times;</button>
+  </div>
+</div>
+<script>
+  function openPrivacyModal() {
+    document.getElementById('privacy-modal').style.display = 'block';
+  }
+</script>
+</body>
+</html>
